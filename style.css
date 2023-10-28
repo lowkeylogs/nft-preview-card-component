@@ -145,12 +145,15 @@ a {
   border: 1px solid white;
 }
 
-.card__creator-link {
+.card__creator-link,
+.attribution__link {
   color: white;
+  font-weight: 400;
 }
 
 .card__title:hover,
-.card__creator-link:hover {
+.card__creator-link:hover,
+.attribution__link:hover {
   color: hsl(178, 100%, 50%);
 }
 
@@ -167,14 +170,6 @@ a {
   position: fixed;
   bottom: 1rem;
   padding: 0 1.5rem;
-}
-
-.attribution__link {
-  color: white;
-}
-
-.attribution__link:hover {
-  text-decoration: underline;
 }
 
 @media (min-width: 48em) {
