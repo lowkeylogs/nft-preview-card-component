@@ -54,7 +54,7 @@ h6 {
   box-shadow: 0 1.5625rem 3.125rem 0 hsl(0, 0, 0, 9.53%);
 }
 
-.card__image-wrapper {
+.card__image {
   position: relative;
   cursor: pointer;
 }
@@ -72,7 +72,7 @@ h6 {
   transition: opacity 200ms ease-in-out;
 }
 
-.card__image-wrapper:hover .card__image-overlay {
+.card__image:hover .card__image-overlay {
   opacity: 1;
 }
 
