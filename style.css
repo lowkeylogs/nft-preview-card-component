@@ -150,8 +150,7 @@ a {
 }
 
 .card__title:hover,
-.card__creator-link:hover,
-.attribution__link:hover {
+.card__creator-link:hover {
   color: hsl(178, 100%, 50%);
 }
 
@@ -172,6 +171,10 @@ a {
 
 .attribution__link {
   color: white;
+}
+
+.attribution__link:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 48em) {
