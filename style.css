@@ -154,6 +154,7 @@ a {
 .card__creator-link:hover,
 .attribution__link:hover {
   color: hsl(178, 100%, 50%);
+  text-decoration: underline;
 }
 
 .card__title,
