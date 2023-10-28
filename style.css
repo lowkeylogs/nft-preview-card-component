@@ -40,10 +40,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-a {
-  text-decoration: none;
-}
-
 .wrapper {
   min-height: 100vh;
   display: grid;
@@ -145,16 +141,15 @@ a {
   border: 1px solid white;
 }
 
-.card__creator-link,
-.attribution__link {
+.card__creator-link {
   color: white;
+  text-decoration: none;
 }
 
 .card__title:hover,
 .card__creator-link:hover,
 .attribution__link:hover {
   color: hsl(178, 100%, 50%);
-  text-decoration: underline;
 }
 
 .card__title,
@@ -170,6 +165,11 @@ a {
   position: fixed;
   bottom: 1rem;
   padding: 0 1.5rem;
+}
+
+.attribution__link {
+  color: white;
+  text-decoration: underline;
 }
 
 @media (min-width: 48em) {
