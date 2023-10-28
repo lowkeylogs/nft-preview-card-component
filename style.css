@@ -1,0 +1,185 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: min(85%, 350px);
+  background-color: #15263f;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 1.5625rem 3.125rem 0 hsl(0, 0, 0, 9.53%);
+}
+
+.card__image {
+  position: relative;
+  cursor: pointer;
+}
+
+.card__image-overlay {
+  background: hsl(178, 100%, 50%, 50%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 0.5rem;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.card__image:hover .card__image-overlay {
+  opacity: 1;
+}
+
+.card__image img {
+  border-radius: 0.5rem;
+}
+
+.card__text-content {
+  display: grid;
+  gap: 1rem;
+  color: hsl(215, 51%, 70%);
+  margin-top: 1.5rem;
+}
+
+.card__info {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.card__title {
+  font-size: 1.375rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card__description {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.card__metrics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__eth,
+.card__days {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.card__eth-icon {
+  width: 0.6875rem;
+  height: 1.125rem;
+}
+
+.card__eth-value {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.card__creator {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.card__creator-avatar {
+  width: 2rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.card__creator-link {
+  color: white;
+}
+
+.card__title:hover,
+.card__creator-link:hover,
+.attribution__link:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.card__title,
+.card__creator-link,
+.attribution__link {
+  transition: color 150ms ease-in;
+}
+
+.attribution {
+  font-size: 0.875rem;
+  color: hsl(215, 51%, 70%);
+  text-align: center;
+  position: fixed;
+  bottom: 1rem;
+  padding: 0 1.5rem;
+}
+
+.attribution__link {
+  color: white;
+}
+
+@media (min-width: 48em) {
+  .card__text-content {
+    gap: 1.5rem;
+  }
+
+  .card__info {
+    gap: 1rem;
+  }
+}
