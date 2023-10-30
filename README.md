@@ -6,5 +6,5 @@ This is a solution to the NFT preview card component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [NFT-preview-card-component](https://www.frontendmentor.io/)
+- Solution URL: [NFT preview card component](https://www.frontendmentor.io/solutions/nft-preview-card-component-bem-57S-RKaKw7)
 - Live Site URL: [https://amgnim.github.io/nft-preview-card-component/](https://amgnim.github.io/nft-preview-card-component/)
